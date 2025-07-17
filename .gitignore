@@ -1,24 +1,45 @@
-# Esclude ambienti virtuali Python
+# Ambienti virtuali
 venv/
 env/
 .venv/
 
-# Esclude file di cache
+# Cache Python
 __pycache__/
 *.pyc
 *.pyo
 
-# Esclude file di log
+# File di configurazione sensibili
+.env
+.env.*
+*.env
+config.py
+settings.py
+secrets.json
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+*.crt
+*.csr
+
+# API keys e token
+*token*
+*secret*
+*password*
+*api_key*
+*openai*
+*OPENAI*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Log
 *.log
 logs/
 
-# Esclude file temporanei
+# Temporanei
 *.tmp
 *.temp
-
-# Esclude file di configurazione sensibili
-.env
-*.key
-*.pem
-config.json
-
